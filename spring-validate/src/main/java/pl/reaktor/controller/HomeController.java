@@ -1,0 +1,27 @@
+package pl.reaktor.controller;
+
+import javax.validation.Valid;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import pl.reaktor.model.Person;
+
+@Controller
+public class HomeController {
+
+	@GetMapping("/")
+	public String home(@ModelAttribute Person person) {
+		return "index";
+	}
+	
+	@PostMapping("/")
+	public String home(@Valid Person person, BindingResult result, Model model) {
+		model.addAttribute(person);
+		return "index";
+	}
+}

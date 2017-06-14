@@ -1,0 +1,25 @@
+package pl.reaktor.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import pl.reaktor.model.Login;
+
+@Controller
+public class LoginController {
+	
+	@GetMapping("/logowanie")
+	public String logowanie(Model model) {
+		model.addAttribute("login1", new Login());
+		return "logowanie";
+	}
+	
+	
+	@PostMapping("/login1")
+	public String logowanieBad(Login login1, Model model) {
+		model.addAttribute("login1", login1);        
+            return "start";
+	}
+}

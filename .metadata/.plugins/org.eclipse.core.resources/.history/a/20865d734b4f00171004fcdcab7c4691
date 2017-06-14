@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Validate form</title>
+</head>
+<body>
+    <h1>Podaj swoje dane</h1>
+    <form action="#" method="post" th:action="@{/}" th:object="${person}">
+        <p th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">Imię: <input type="text" th:field="*{firstName}" placeholder="Podaj imię" /></p>
+        <input type="submit" value="Save" />
+    </form>
+</body>
+</html>

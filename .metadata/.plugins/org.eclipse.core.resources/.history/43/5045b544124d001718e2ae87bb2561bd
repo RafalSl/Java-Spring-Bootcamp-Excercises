@@ -1,0 +1,24 @@
+package pl.reaktor;
+
+import java.util.ArrayList;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import pl.reaktor.model.Car;
+
+@SpringBootApplication
+public class SpringDataCwApplication {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext ctx = SpringApplication.run(SpringDataCwApplication.class, args);
+		
+		//Utworzenie nowej tablicy SQL
+		List<Car> cars = new ArrayList<>();
+		
+		cars.add(new Car("A4", "Audi", 49000.0));  
+	    cars.add(new Car("Auris", "Toyota", 35000.0));  
+	    cars.add(new Car("Insignia", "Opel", 29500.0)); 
+	}
+}

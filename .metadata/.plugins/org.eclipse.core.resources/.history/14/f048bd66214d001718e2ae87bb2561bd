@@ -1,0 +1,5 @@
+package pl.reaktor.data;
+
+public class TimeDataRepository {
+
+}

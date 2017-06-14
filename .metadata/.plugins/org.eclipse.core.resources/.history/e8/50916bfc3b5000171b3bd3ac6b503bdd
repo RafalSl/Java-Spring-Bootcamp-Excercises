@@ -1,0 +1,40 @@
+package pl.reaktor.controller;
+
+import javax.validation.Valid;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import pl.reaktor.model.Login;
+
+@Controller
+public class HomeController {
+
+	@RequestMapping("/")
+	public String home(Model model) {
+		return "login1";
+	}
+
+	@RequestMapping("/start")
+	public String start (Model model) {
+		return "index";
+	}
+	
+	@GetMapping("/login1")
+	public String logowanie(Login login1, Model model) {
+		model.addAttribute("login1", login1);
+		return "login1";
+	}
+	
+	
+	@PostMapping("/login1")
+	public String logowanieBad(Login login1, Model model) {
+		model.addAttribute("login1", login1);        
+            return "start";
+	}
+	
+}

@@ -1,0 +1,31 @@
+package pl.reaktor.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import pl.reaktor.model.Article;
+import pl.reaktor.model.Basket;
+
+@Controller
+public class HomeController {
+	
+	/*@GetMapping("/")
+	public String home(Model model) {
+		model.addAttribute("helloMessage", "Add a post");
+		model.addAttribute("formArticle", new Article("Some title", "Content here...", "tag1, tag2, ...", 0));
+		return "index";
+	}*/
+	
+	@GetMapping("/")
+	public String home(Model model) {
+		model.addAttribute("helloMessage", "Dodaj produkty do koszyka:");
+		model.addAttribute("formBasket", new Basket("Produkt 1", "Proukt 2", "Produkt 3", 1000, 550, 99.9));
+		return "home";
+	}
+
+
+
+}
+
+

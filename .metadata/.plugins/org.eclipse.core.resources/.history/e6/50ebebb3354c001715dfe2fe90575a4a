@@ -1,0 +1,12 @@
+package pr.reaktor;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringWarTestApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringWarTestApplication.class, args);
+	}
+}

@@ -1,0 +1,44 @@
+package pl.reaktor.controller;
+
+import org.apache.hadoop.mapred.loadhistory_jsp;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import pl.reaktor.model.Login;
+import pl.reaktor.repository.UserRepository;
+
+@Controller
+public class LoginController {
+	
+	private UserRepository users;
+
+	@Autowired
+    public void setUserRepository(UserRepository userRepository) {
+        this.setUsers(userRepository);
+    }
+	
+	@GetMapping("/logowanie")
+	public String logowanie(Model model) {
+		model.addAttribute("login1", new Login());
+		return "logowanie";
+	}
+	
+	
+	@PostMapping("/logowanie")
+	public String logowanieBad(Model model) {
+		model.addAttribute("login1", new Login()); 
+			users.loaduse
+            return "status";
+	}
+
+	public UserRepository getUsers() {
+		return users;
+	}
+
+	public void setUsers(UserRepository users) {
+		this.users = users;
+	}
+}

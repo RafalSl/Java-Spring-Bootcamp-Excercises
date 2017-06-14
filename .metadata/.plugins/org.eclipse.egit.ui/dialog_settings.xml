@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\HP\Desktop\Projekty Reaktor\Reg-log-form\Registration-login-form\.git">
+			<item value="false"/>
+			<item value="Rafal_Slomka &lt;rafal_slomka@poczta.onet.pl&gt;"/>
+			<item value="add index and HomeController"/>
+			<item value="Rafal_Slomka &lt;rafal_slomka@poczta.onet.pl&gt;"/>
+			<item value="d86d51b89853ca0c802cdd0be8dd6f759ea0d890"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="200,200" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

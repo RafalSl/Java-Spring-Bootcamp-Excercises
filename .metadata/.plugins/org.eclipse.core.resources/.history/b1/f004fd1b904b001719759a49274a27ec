@@ -1,0 +1,31 @@
+package FirstSteps.Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import FirstSteps.Model.Info;
+
+@Controller
+public class HomeController {
+	
+	@RequestMapping("/")
+	public String home() {
+		System.out.print("Przegl¹darka taka i œmaka");
+		return "index";
+	}
+	
+	@RequestMapping(value="/contact", method = RequestMethod.GET)
+	public String contact(Model model) {
+		Info info = new Info();
+		model.addAttribute(info);
+		return "contact";
+	}
+	
+	@RequestMapping("info")
+	public String info() {
+		System.out.print("strona informacyjna");
+		return "info";
+	}
+}

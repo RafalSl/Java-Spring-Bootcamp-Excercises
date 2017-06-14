@@ -1,0 +1,20 @@
+package pl.reaktor.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import pl.reaktor.model.Basket;
+
+@Controller
+public class BasketController {
+	 @PostMapping("/buy") 
+	    public String addArticle(@ModelAttribute Basket formBasket, Model model) { 
+		 if(formBasket.getI1() > 0) {
+			 formBasket.setC1(formBasket.getI1() * 100);
+		 }
+		 return "basket"; 
+	 }
+
+}

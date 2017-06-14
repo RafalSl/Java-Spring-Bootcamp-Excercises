@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring-data-cw"/>
+<aop-project name="thymeleaf-cw"/>
+<aop-project name="spring-jar-test"/>
+<aop-project name="spring-data-thyme"/>
+<aop-project name="spring-security-cw"/>
+<aop-project name="spring-data-security"/>
+<aop-project name="thymeleaf-test"/>
+<aop-project name="spring-validate"/>
+<aop-project name="Login-registration-form"/>
+<aop-project name="spring-war-test"/>
+<aop-project name="FirstPackage"/>
+</aop-reference-model>

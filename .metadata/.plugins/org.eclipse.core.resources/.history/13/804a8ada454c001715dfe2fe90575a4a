@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+</head>
+<body>
+<h2>Hello Happy World!</h2>
+<p>Test polskich znaków śćźżół</p>
+<img src="/photo/world.svg">
+<a href="nowa.html">nowa strona</a>
+</body>
+</html>

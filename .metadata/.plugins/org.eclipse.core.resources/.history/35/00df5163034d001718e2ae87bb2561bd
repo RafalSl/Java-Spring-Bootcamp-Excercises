@@ -1,0 +1,10 @@
+<!DOCTYPE html> 
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head> 
+<meta charset="UTF-8" /> 
+<title>Selected products</title> 
+</head> 
+<body> 
+    <p>Produkt 1.<br/>Ilość:</p><p th:text="${formBasket.i1}"><p>Cena:</p><p th:text="${formBasket.c1}"></p> 
+</body> 
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+</head>
+<body>
+<h2>Hello Thyme!</h2>
+<a href="nowa">nowa strona</a>
+<a href="getmap">get mapping</a>
+</body>
+</html>

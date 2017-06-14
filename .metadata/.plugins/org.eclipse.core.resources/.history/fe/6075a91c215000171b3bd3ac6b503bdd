@@ -1,0 +1,15 @@
+package pl.reaktor.service;
+
+import org.springframework.stereotype.Service;
+
+import pl.reaktor.model.NewMember;
+import pl.reaktor.repository.UserRepository;
+
+@Service
+public class UserService {
+	private UserRepository users;
+	
+	public void addNewMember(NewMember newMember) {
+		users.save(newMember);
+	}
+}

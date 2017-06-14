@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head> 
+<meta charset="UTF-8" /> 
+<title>Spring Shop</title> 
+</head> 
+<body> 
+    <h1 th:text="${helloMessage}"></h1> 
+    <form th:action="@{/buy}" method="post"> 
+        <p type="text" th:field="${formBasket.i1}" />Produkt 1</p> 
+        <p type="text" th:field="${formBasket.i1}" />Produkt 2</p> 
+        <p type="text" th:field="${formBasket.i1}" />Produkt 3</p> 
+        <p><input type="submit" value="Buy" /></p> 
+    </form> 
+</body> 
+</html> 

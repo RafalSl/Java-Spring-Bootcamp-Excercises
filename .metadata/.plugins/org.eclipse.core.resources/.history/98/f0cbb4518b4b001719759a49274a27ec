@@ -1,0 +1,16 @@
+<html>
+<body>
+<h2>Kontakt</h2>
+<form>
+Imię:<br>
+<input type="text"><br>
+Nazwisko:<br>
+<input type="text"><br>
+Pozycja:<br>
+<input type="text"><br>
+Wiek:<br>
+<input type="text"><br>
+</form>
+
+</body>
+</html>

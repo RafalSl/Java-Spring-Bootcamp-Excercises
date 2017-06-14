@@ -1,0 +1,5 @@
+package FirstSteps.Model;
+
+public class Targi {
+	private String name, lastname, company, email, size, type, day, extras;
+}

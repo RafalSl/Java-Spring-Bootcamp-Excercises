@@ -1,0 +1,5 @@
+package pl.reaktor.service;
+
+public class UserService {
+
+}
